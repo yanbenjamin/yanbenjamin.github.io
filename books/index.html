@@ -8,49 +8,55 @@
 
     <body>
 
+        <script src = "booksearch.js"></script>
+
         <div class="header">
             <h1><a style = "font-weight:bold; text-decoration: none; color: black" href = "../index.html">Benjamin Yan</a></h1>
         </div>
 
-        <h2>My Bookshelf</h2>
-        <hr>
-        <img src="../images/shelf.png" alt="image of books">
-        <p>
-            Here are the books I'm reading right now. 
-        </p>
+        
+        <p>Here are the books I'm reading right now. </p>
 
         <table width = "100%" id = "watchlist-current">
             <tr style = "background: rgb(233, 179, 214)">
-                <td colspan="2"><b>What I'm Reading</b></td>
+                <td colspan="4"><b>What I'm Reading</b></td>
             </tr>
-            <tr><td>The Idiot by Elif Batuman</td>
-                <td>Loveless by Alice Oseman</td></tr> 
+            <tr style = "background-color: white"><td width = "25%"><img align = "left" src = "../images/the_idiot.jpeg"></td>
+                    <td width = "25%"><img align = "left" src = "../images/loveless.jpg"></td>
+                    <td width = "25%"><img align = "left" src = "../images/stargirl.jpeg"></td>
+                            <td width = "25%"><img align = "left" src = "../images/love_gelato.jpg"></td></tr> 
          </table>
          
         <p>Here are some books I anticipate reading in the near future. As one 
        can probably tell, my favorite genre is <em>romantic young adult (YA) fiction</em>.
-        That used to embarrass me quite a bit. It still does&#8212;to an extent. I'm also a fan of science fiction, fantasy, and LGBTQ+ fiction.</p>
+        That used to embarrass me quite a bit. It still does&#8212;to an extent. I'm also a fan of science fiction, fantasy, and LGBTQ+ fiction.
+        My favorite authors include Rick Riordan, Neil Gaiman, Alice Oseman, Ken Liu, and Alix E. Harrow.</p>
 
         <table width = "100%" id = "watchlist">
             <tr style = "background: rgb(178, 251, 224)">
                 <td colspan="2"><b>Future Reading List</b></td>
             </tr>
-            <tr><td>Love & Gelato by Jenna E. Welch</td>
+            <tr><td>Love & Luck by Jenna E. Welch</td>
                 <td>The Ten Thousand Doors of January by Alix E. Harrow</td></tr>
             <tr><td>Solitaire by Alice Oseman</td>
                 <td>A Scatter of Light by Malinda Lo</td></tr>
             <tr><td>Trials of Apollo: The Hidden Oracle by Rick Riordan</td>
                 <td>The Kane Chronicles: The Red Pyramid by Rick Riordan</td></tr>
-            <tr><td>Magnus Chase: The Sword of Summer by Rick Riordan</td>
+            <tr><td>A Promised Land by Barack Obama</td>
                 <td>The Love Hypothesis by Ali Hazelwood</td></tr>
             <tr><td>Radio Silence by Alice Oseman</td>
                 <td>A Thousand Heartbeats by Kiera Cass</td></tr>
+            <tr><td>Songs of Silver, Flame Like Night by Amélie Wen Zhao</td>
+                <td>The Grace of Kings by Ken Liu</td></tr>
         </table>
         
+        <h2>Books I've Read</h2> 
+        <hr>
         <p>Here are some books I've read and given a (totally objective and non-biased) rating out of 5 stars.
             Are my ratings at least partially based on how pretty the cover art is? Well, yes.</p>
-
-        <table  width = "100%">
+        
+        <input type="text" id="book_input" onkeyup="bookSearch()" placeholder="Search by Book Title or Author Name">
+        <table  width = "100%" id = "book_table">
             <tr style = "background:lightblue;" id = "books"><td><b>Book</b></td><td><b>Author</b></td><td><b>Rating</b></td></tr>
             <tr><td>Percy Jackson: The Lightning Thief</td><td>Rick Riordan</td><td>★★★★★</td></tr>
             <tr><td>Percy Jackson: Sea of Monsters</td><td>Rick Riordan</td><td>★★★☆☆</td></tr>
@@ -58,11 +64,94 @@
             <tr><td>Percy Jackson: The Battle of the Labyrinth</td><td>Rick Riordan</td><td>★★★★☆</td></tr>
             <tr><td>Percy Jackson: The Last Olympian</td><td>Rick Riordan</td><td>★★★★★</td></tr>
             <tr><td>The Heroes of Olympus: The Lost Hero</td><td>Rick Riordan</td><td>★★★☆☆</td></tr>
-            <tr><td>The Heroes of Olympus: The Son of Neptune</td><td>Rick Riordan</td><td>★★★★★</td></tr>
+            <tr><td>The Heroes of Olympus: The Son of Neptune</td><td>Rick Riordan</td><td>★★★★☆</td></tr>
             <tr><td>The Heroes of Olympus: The Mark of Athena</td><td>Rick Riordan</td><td>★★★★☆</td></tr>
             <tr><td>The Heroes of Olympus: The House of Hades</td><td>Rick Riordan</td><td>★★★☆☆</td></tr>
             <tr><td>The Heroes of Olympus: The Blood of Olympus</td><td>Rick Riordan</td><td>★★★☆☆</td></tr>
+
+            <tr><td>Harry Potter And the Sorcerer's Stone</td><td>J.K. Rowling</td><td>★★★★☆</td></tr>
+            <tr><td>Harry Potter And the Chamber of Secrets</td><td>J.K. Rowling</td><td>★★★☆☆</td></tr>
+            <tr><td>Harry Potter And the Prizoner of Azkaban</td><td>J.K. Rowling</td><td>★★★★★</td></tr>
+            <tr><td>Harry Potter And the Goblet of Fire</td><td>J.K. Rowling</td><td>★★★★★</td></tr>
+            <tr><td>Harry Potter And the Order of the Phoenix</td><td>J.K. Rowling</td><td>★★★★☆</td></tr>
+            <tr><td>Harry Potter And the Half-Blood Prince</td><td>J.K. Rowling</td><td>★★★★☆</td></tr>
+            <tr><td>Harry Potter And the Deathly Hallows</td><td>J.K. Rowling</td><td>★★★★☆</td></tr>
+
+            <tr><td>The Great Gatsby</td><td>F. Scott Fitzgerald</td><td>★★★★★</td></tr>
+            <tr><td>The Hobbit</td><td>J.R.R. Tolkien </td><td>★★★★★</td></tr>
+            <tr><td>The Hunger Games</td><td>Suzanne Collins</td><td>★★★★★</td></tr>
+            <tr><td>The Lord of the Rings</td><td>J.R.R. Tolkien </td><td>★★★★☆</td></tr>
+
+            <tr><td>Light From Uncommon Stars</td><td>Ryka Aoki</td><td>★★★★☆</td></tr>
+            <tr><td>The Handmaid's Tale</td><td>Margaret Atwood</td><td>★★★★★</td></tr>
+            <tr><td>Nineteen Eighty-Four</td><td>George Orwell</td><td>★★★★☆</td></tr>
+            <tr><td>Frankenstein</td><td>Mary Shelley</td><td>★★★★☆</td></tr>
+            <tr><td>A Separate Peace</td><td>John Knowles</td><td>★★★★★</td></tr>
         </table>
 
+        <p>As a note, <em>The Lord of the Rings</em> would have received a full five stars if Tom Bombadil didn't exist.</p>
+
+        <h2>Book to Media Adaptations I Loved</h2> 
+        <hr>
+
+        <table>
+            <tr style = "background-color: white"><td> <img src = "../images/potter_movies.jpg" width = "500mm"> </td>
+                <td style = "padding-left: 10px; vertical-align:top"><h3>Harry Potter Movies</h3> Daniel Radcliffe, Rupert Grint, and Emma Watson were simply my childhood.
+                We don't talk about Fantastic Beasts (except Eddie Redmayne and Katherine Waterston, who are flawless).</p></td>
+        
+            <td> <img src = "../images/maze_runner.webp" width = "500mm"> </td>
+                <td style = "padding-left: 10px; vertical-align:top"><h3>Maze Runner Trilogy</h3> I actually really loved the Maze Runner film trilogy <em>(Maze Runner, Scorch Trials, Death Cure)</em>, 
+                    despite the milquetoast reviews on Rotten Tomatoes
+                and Metacritic. It might just be Dylan O'Brien, though.</p>
+                <details>
+                    <summary style = "color: rgb(114, 55, 55)"><b style = 'color:rgb(114, 55, 55)'>Spoilers</b></summary>
+                    Newt's death makes me cry every time, shit.
+                </details>
+            </td></tr>
+
+            <tr style = "background: white">
+                <td colspan="4" style = "height: 20px"></td>
+            </tr>
+
+            <tr style = "background-color: white"><td> <img src = "../images/hunger_games.jpg" width = "500mm"> </td>
+                <td style = "padding-left: 10px; vertical-align:top"><h3>Hunger Games Series</h3> This was arguably the summit of the dystopian teen YA age in Hollywood while it lasted. Now, it's just an endless war 
+                    between superhero movie fans and Scorsese diehards. Fuck.</p></td>
+        
+           <td> <img src = "../images/sherlock.jpg" width = "300mm"> </td>
+                <td style = "padding-left: 10px; vertical-align:top"><h3>BBC Sherlock</h3>
+                    <p>For years, this show had me in an obsessive state of <b style = "color:rgb(114, 55, 55)">SHER</b>LOCKED, I swear. One of my all-time favorite mystery series,
+                   and Season 5 will probably never see the light of day dammit.</p></td></tr>
+                
+        </table>
+
+        <p></p>
+
+        <h2>Book to Media Adaptations I Did Not Love</h2> 
+        <hr>
+
+        <table>
+                <tr style = "background-color: white"><td> <img src = "../images/percy_jackson.jpg" width = "400mm"> </td>
+                <td style = "padding-left: 10px; vertical-align:top"><h3>Percy Jackson Movies</h3> <p>Even author Rick Riordan doesn't like them. At least 
+                    the Lotus Casino scene is so iconic that I'll remember it forever.
+                </p></td>
+
+               <td> <img src = "../images/divergent.jpeg" width = "400mm"> </td>
+                    <td style = "padding-left: 10px; vertical-align:top"><h3>Divergent Movies</h3> <p>The downfall of teen YA eulogized in three movies: Divergent, Insurgent, and Allegiant. Had so much potential;
+                        what a shame.
+                    </p></td> </tr>
+    
+        </table>
+        <p></p>
+
+        <h2>My Immortal Bookshelf</h2>
+        <hr>
+        <img src="../images/shelf.png" alt="image of books">
+
+
+        <!--
+        <header class="dynamic_header">
+           <p style = "text-align: center">This website is open-source and hosted on Github Pages.</p>
+        </header>
+    -->
     </body>
 </html>
