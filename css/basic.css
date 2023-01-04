@@ -16,6 +16,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .header {
     padding: 0px;
     text-align: left;
+    background-color: white;
     /*background: rgb(179, 218, 242);*/
     color: black;
     font-size: 14px;
