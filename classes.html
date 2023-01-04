@@ -20,7 +20,7 @@
         <p id = "here"></p> 
 
         
-        <table width = "100%">
+        <table width = "100%"">
             <tr><td style = "display: table; max-width: 200px">
 
                 <p style = "margin-bottom: 50px"></p>
@@ -42,9 +42,9 @@
         <p></p>
 
         <table class = "bruh">
-            <tr><td> <a class="active" href = "index.html"><i class = "fas fa-user-circle"></i> About</a></td></tr>
-            <tr><td> <a href = "research.html"><i class = "fas fa-robot"></i> Research</a></td></tr>
-            <tr><td> <a href = "classes.html"><i class = "fas fa-chalkboard-teacher"></i> Classes</a></td></tr>
+            <tr><td> <a  href = "index.html"><i class = "fas fa-user-circle"></i> About</a></td></tr>
+            <tr><td> <a href = "classes.html"><i class = "fas fa-robot"></i> Research</a></td></tr>
+            <tr><td> <a class="active" href = "classes.html"><i class = "fas fa-chalkboard-teacher"></i> Classes</a></td></tr>
             <tr><td> <a href = "movies/index.html"><i class = "fa fa-rebel"></i> Movies/TV</a></td></tr>
             <tr><td> <a href = "books/index.html"><i class = "fa fa-book"></i> Reads</a></td></tr>
         </table>
@@ -52,38 +52,62 @@
         <p style = "margin-bottom:10px"></p>
 
         <table class = "normal">
-            <tr><td> <a href = "index.html"><i style = "color: red" class = "fas fa-map-pin"></i> Bay Area</a></td></tr>
+            <tr><td> <a href = "index.html"><i style = "color: red" class = "fas fa-map-pin"></i> Palo Alto, CA</a></td></tr>
             <tr><td> <a href = "files/resume.pdf"><i class = "far fa-file-pdf"></i> Resume</a></td></tr>
         </table>
 
         </td>
         <!-- <tr><td> <a style = "font-weight:bold; text-decoration: none; color:black" href = "classes.html"><i class = "fas fa-chalkboard-teacher"></i> Classes</a></td></tr> -->
 
-        <td style = "vertical-align: top">
+        <td style = "vertical-align: top; width: 100%">
             <!-- <tr><td> <a style = "font-weight:bold; text-decoration: none; color:black" href = "classes.html"><i class = "fas fa-chalkboard-teacher"></i> Classes</a></td></tr> -->
-    
         <div style = "margin-left: 20px">
-
     <!--<div class="text" style="margin-left: 20px">-->
         
-        <h2 style = "color: navy;">About Me</h2>
-        <p>Hi! I'm Benjamin Yan (颜斌), a student at <b style = "color: navy">Stanford University</b> studying mathematics (B.S.), computer science (B.S.),
-            and creative writing (minor). I'm fortunate to be advised by Jerry Cain and Prof. Yakov Eliashberg. I plan to graduate in June 2024.</p>
+        <h2 style = "color: navy;">Classes I've Taken</h2>
+        <p>Here are some of the courses I really enjoyed at Stanford.</p>
 
-         <p>My email is <b style = "color: darkblue">bbyan [at] stanford [dot] edu</b>. My pronouns are <em>he/him.</em></p>
+        <table width = "95%" id = "show_table" style = "padding: 3px">
+            <tr style = "background:lightskyblue" id = "shows" ><td><b>Title</b></td> <td><b>Course Name</b></td> <td><b>Quarter & Instructor</b></td> </tr>
+            <tr><td>CS 109</td><td>Probability for Computer Scientists</td><td>Fall 2020-21 (Jerry Cain, Lisa Yan)</td></tr> 
+            <tr><td>CS 110</td><td>Principles of Computer Systems</td><td>Fall 2021-22 (Jerry Cain)</td></tr>
+            <tr><td>CS 224N</td><td>NLP for Deep Learning</td><td>Winter 2021-22 (Chris Manning)</td></tr>  
+            <tr><td>CS 330</td><td>Deep Multi-Task Meta Learning</td><td>Fall 2022-23 (Chelsea Finn)</td></tr>
+            <tr><td>CS 246</td><td>Mining Massive Datasets</td><td>Winter 2021-22 (Jure Leskovec)</td></tr>  
 
-        <p>I'm broadly interested in machine learning, NLP, visual language models, and healthcare. I've previously worked 
-            at <b style = "color: seagreen">NVIDIA</b>, <b style = "color: navy">Stanford AI Lab</b>,
-       <b style = "color: navy">Stanford NLP Group</b>, and <b style = "color: purple">Mayo Clinic</b>. This winter quarter of 2022-23, I'll be a visiting AI 
-        researcher at <b style = "color: crimson">Harvard Medical School</b>, advised by Prof. Pranav Rajpurkar and Prof. Andrew Ng.</p>
+            <tr><td>Math 155</td><td>Analytic Number Theory</td><td>Spring 2021-22 (Lynnelle Ye)</td></tr>  
+            <tr><td>Math 63DM</td><td>Discrete Modern Mathematics</td><td>Summer 2020-21 (Tadashi Tokeida)</td></tr>  
+            <tr><td>Math 116</td><td>Complex Analysis</td><td>Fall 2022-23 (Yakov Eliashberg)</td></tr>
+            <tr><td>Math 108</td><td>Intro to Combinatorics</td><td>Spring 2020-21 (Matthew Kwan)</td></tr>
+            
+            <tr><td>English 17Q</td><td>Science Fiction</td><td>Spring 2021-22 (Melissa Stevenson)</td></tr>
+            <tr><td>English 24Q</td><td>Leaving Patriarchy</td><td>Spring 2021-22 (Nina Schloesser Tárano)</td></tr>    
+            <tr><td>English 90</td><td>Fiction Writing</td><td>Fall 2022-23 (Georgina Beaty)</td></tr>    
 
-        <p>I'm originally from Rochester, Minnesota, where I shoveled snow, ice-skated with bears, and admired the two hours of yearly sunshine. I'm a proud 
-            alum of <b style = "color: purple">Century High School</b> and the now-closed <b style = "color: purple">Friedell Middle School</b> &#128546;.</p> 
+        <!--
 
-        <p>Outside of work, I enjoy young adult fiction, Pixar movies (Toy Story, Ratatouille, Inside Out, Soul), hiking, and pretending that I'm a Jedi <i class = "fab fa-jedi-order"></i>.</p>
+        <table width = "95%" id = "show_table" class = "alternating">
+            <tr style = "background:lightgreen" id = "shows" ><td style = "width:85%"><b>TV Show & Season</b></td> <td style = "width:15%"><b>Rating</b></td></tr>
+            <tr><td>Wednesday: Season 1 (2022)</td> <td>8</td></tr>
+            <tr><td>House of the Dragon: Season 1 (2022)</td> <td>9</td></tr>
+            <tr><td>Euphoria: Season 1 (2019)</td> <td>9</td></tr>
+            <tr><td>Euphoria: Season 2 (2022)</td> <td>8</td></tr>
+            <tr><td>LOTR: Rings of Power: Season 1 (2022)</td> <td>7</td></tr>
+            <tr><td>Heartstopper: Season 1 (2022)</td> <td>8</td></tr>
+            <tr><td>Stranger Things: Season 1 (2016)</td> <td>9</td></tr>
+            <tr><td>Star Wars Andor: Season 1 (2022)</td> <td>9</td></tr>
+            <tr><td>WandaVision: Season 1 (2021)</td> <td>8</td></tr>
+            <tr><td>Loki: Season 1 (2021)</td> <td>10</td></tr>
+            <tr><td>Moon Knight: Season 1 (2021)</td> <td>7</td></tr>
+        -->
+
+        </table>
+
 
         </div>
-        </td></tr></table>
+        </td>
+    
+    </tr></table>
 
         <!--
         <div style = "background-color: rgb(200, 234, 245); padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px">

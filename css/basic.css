@@ -1,19 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
 body{
     color: black;
     background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: "Poppins";
 }
 
-/* font-family: Arial, Helvetica, sans-serif */
+/* font-family: Arial, Helvetica, sans-serif 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+*/
 
 .header {
-    padding: 3px;
-    text-align: center;
-    background: rgb(179, 218, 242);
+    padding: 0px;
+    text-align: left;
+    /*background: rgb(179, 218, 242);*/
     color: black;
     font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: "Poppins";
 }
+
+.bruh a{
+    font-weight:bold; 
+    text-decoration: none; 
+    color:black;
+    padding: 3px;
+}
+
+.normal a{
+    text-decoration: none; 
+    color:black;
+    padding: 3px;
+}
+
+.bruh a:hover { 
+    color: navy;
+}
+
+.bruh a.active {
+    background-color: lightskyblue;
+}
+
+
+.alternating tr:nth-child(2n)
+{
+    background: lightgray;
+}
+
+.special {
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    max-height: 90%;
+    max-width: 90%;
+}
+
 
 .container {
     display: flex;
@@ -21,6 +64,48 @@ body{
     justify-content: left;
   }
 
-a:visited { 
-    color: black
-}
+  #film_input {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    min-width: 100%;
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
+  #film_table {
+    border-collapse: collapse; /* Collapse borders */
+  }
+  
+  #show_input {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
+  #show_table {
+    border-collapse: collapse; /* Collapse borders */
+  }
+
+  #book_input {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
+  #book_table {
+    border-collapse: collapse; /* Collapse borders */
+  }
