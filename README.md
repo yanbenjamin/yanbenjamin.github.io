@@ -1,3 +1,3 @@
 # yanbenjamin.github.io
 
-Welcome to my personal website.
+Hi! Welcome to my personal website.
