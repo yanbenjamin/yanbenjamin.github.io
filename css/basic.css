@@ -70,6 +70,11 @@ body{
   color:navy;
 }
 
+.semi_link {
+  text-decoration: none; 
+  color:slateblue;
+}
+
 .bruh a{
     font-weight:bold; 
     text-decoration: none; 
