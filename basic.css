@@ -114,3 +114,9 @@ body{
     align-items: left;
     justify-content: left;
 }
+
+div.scroll {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
