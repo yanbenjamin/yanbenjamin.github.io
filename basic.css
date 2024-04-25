@@ -120,3 +120,10 @@ div.scroll {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
