@@ -86,3 +86,11 @@
     margin-bottom: 5px;
     margin-right: 5px;
 }
+
+.portrait{
+        object-fit: cover;
+        height:150px; 
+        border-radius:10px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+}
